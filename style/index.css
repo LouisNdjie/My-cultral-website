@@ -1,0 +1,367 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    box-sizing: border-box;
+}
+
+
+/*creation des variables d'etat pour le CSS*/
+:root
+{    
+    --noir : #000000;
+    --blanc : #ffffff;
+    --dark-green : rgba(0, 255, 0, 0.2);
+    --light-green : limegreen;
+    --gray : #e0e0e0;
+    --dark-gray-low: #c0c0c0;
+    --dark-gray-medium: #999;
+    --dark-gray:#333;
+    --simple-green:  #81F89A;
+}
+
+
+/*parametre pour rendre responsive*/
+@media (min-width : 360px) and (max-width : 766px)
+{
+    
+}
+/*--------pour les ecrans des tablettes------------*/
+@media (min-width : 767px) and (max-width : 978px)
+{
+    .back
+    {
+        position: absolute;
+        /*background: url(../image/nature_01.jpg);*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .navbar
+    {
+        position: fixed;
+        width: 100vw;
+        height: 80px;
+        background-color: var(--noir);
+        background-blend-mode: overlay;
+    }
+
+    .navbar h2
+    {
+       
+        font-family:'Times New Roman';
+        font-size: 40px;
+        position: absolute;
+        top: 15px;
+        letter-spacing: 2.5px;
+        color : transparent;
+        -webkit-text-stroke: 1px var(--light-green);
+        background: var(--dark-green);
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+
+    .navbar h2:nth-child(2)
+    {
+        color: var(--light-green);
+        animation: water 4s ease-in-out infinite;
+    }
+
+    @keyframes water 
+    {
+        0%, 100%
+        {
+            clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+        }    
+        50%{
+            clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+        }
+    }
+
+    .navbar .nav-option li a button
+    {
+        position: relative;
+        top:0px;
+        background: var(--simple-green);
+        border: 1px solid var(--light-green);
+        box-shadow: 0 5px 0 0px var(--light-green);
+        border-radius: 15px;
+        width: 90px;
+        height: 30px;
+    }
+
+    .navbar .nav-option li a
+    {
+        text-decoration: none;
+        color: var(--simple-green);   
+        position: relative;
+        top: 5px;
+    }
+    
+    
+    .navbar .nav-option li a:hover
+    {
+        color: var(--light-green);
+    }
+
+    .navbar .nav-option .link
+    {
+        position: relative;
+        top: 10px;
+    }
+
+    .navbar .nav-option li a button:hover
+    {
+        transform: translateY(1px);
+        cursor: pointer;
+    }
+
+    .navbar .nav-option li a button:active
+    {
+        transform: translateY(4px);
+        box-shadow: 0 1px 0px 0 var(--light-green);
+    }
+    
+    .navbar .nav-option
+    {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        position: absolute;
+        left: 48vw;
+        top: 22px;
+        height: 80px;
+    }
+}
+/*------pour les ecrans des tablettes------------*/
+@media (min-width : 979px) and (max-width : 1200px)
+{
+    .back
+    {
+        position: absolute;
+        /*background: url(../image/nature_01.jpg);*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .navbar
+    {
+        position: fixed;
+        width: 100vw;
+        height: 80px;
+        background-color: var(--noir);
+        background-blend-mode: overlay;
+    }
+
+    .navbar h2
+    {
+       
+        font-family:'Times New Roman';
+        font-size: 40px;
+        position: absolute;
+        top: 15px;
+        letter-spacing: 2.5px;
+        color : transparent;
+        -webkit-text-stroke: 1px var(--light-green);
+        background: var(--dark-green);
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+
+    .navbar h2:nth-child(2)
+    {
+        color: var(--light-green);
+        animation: water 4s ease-in-out infinite;
+    }
+
+    @keyframes water 
+    {
+        0%, 100%
+        {
+            clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+        }    
+        50%{
+            clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+        }
+    }
+
+    .navbar .nav-option li a button
+    {
+        position: relative;
+        top:0px;
+        background: var(--simple-green);
+        border: 1px solid var(--light-green);
+        box-shadow: 0 5px 0 0px var(--light-green);
+        border-radius: 15px;
+        width: 90px;
+        height: 30px;
+    }
+
+    .navbar .nav-option li a
+    {
+        text-decoration: none;
+        color: var(--simple-green);   
+        position: relative;
+        top: 5px;
+    }
+    
+    
+    .navbar .nav-option li a:hover
+    {
+        color: var(--light-green);
+    }
+
+    .navbar .nav-option .link
+    {
+        position: relative;
+        top: 10px;
+    }
+
+    .navbar .nav-option li a button:hover
+    {
+        transform: translateY(1px);
+        cursor: pointer;
+    }
+
+    .navbar .nav-option li a button:active
+    {
+        transform: translateY(4px);
+        box-shadow: 0 1px 0px 0 var(--light-green);
+    }
+    
+    .navbar .nav-option
+    {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        position: absolute;
+        left: 56vw;
+        top: 22px;
+        height: 80px;
+    }
+    
+}
+
+/*-----------pour les grands ecrans-------------*/
+@media (min-width : 1200px)
+{
+    .back
+    {
+        position: absolute;
+        /*background: url(../image/nature_01.jpg);*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .navbar
+    {
+        position: fixed;
+        width: 100vw;
+        height: 80px;
+        background-color: var(--noir);
+        background-blend-mode: overlay;
+    }
+
+    .navbar h2
+    {
+       
+        font-family:'Times New Roman';
+        font-size: 40px;
+        position: absolute;
+        top: 15px;
+        letter-spacing: 2.5px;
+        color : transparent;
+        -webkit-text-stroke: 1px var(--light-green);
+        background: var(--dark-green);
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+
+    .navbar h2:nth-child(2)
+    {
+        color: var(--light-green);
+        animation: water 4s ease-in-out infinite;
+    }
+
+    @keyframes water 
+    {
+        0%, 100%
+        {
+            clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+        }    
+        50%{
+            clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+        }
+    }
+
+    .navbar .nav-option li a button
+    {
+        position: relative;
+        top:0px;
+        background: var(--simple-green);
+        border: 1px solid var(--light-green);
+        box-shadow: 0 5px 0 0px var(--light-green);
+        border-radius: 15px;
+        width: 90px;
+        height: 30px;
+    }
+
+    .navbar .nav-option li a
+    {
+        text-decoration: none;
+        color: var(--simple-green);   
+        position: relative;
+        top: 5px;
+    }
+    
+    
+    .navbar .nav-option li a:hover
+    {
+        color: var(--light-green);
+    }
+
+    .navbar .nav-option .link
+    {
+        position: relative;
+        top: 10px;
+    }
+
+    .navbar .nav-option li a button:hover
+    {
+        transform: translateY(1px);
+        cursor: pointer;
+    }
+
+    .navbar .nav-option li a button:active
+    {
+        transform: translateY(4px);
+        box-shadow: 0 1px 0px 0 var(--light-green);
+    }
+    
+    .navbar .nav-option
+    {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        position: absolute;
+        left: 57vw;
+        top: 22px;
+        height: 80px;
+    }
+}
